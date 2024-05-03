@@ -12,8 +12,11 @@
 
     <link rel="icon" href="images/CarrieGameArt/Logo.png">
 
+    <script src="slideshow.js">
+    </script>
+
 </head>
-<body>
+<body onload = "showSlides(1)">
 
     <!-- Navbar -->
     <div class="navbar">
@@ -60,6 +63,46 @@
             </p>
         </div>
 
+
+        <div class="slideshow-box">
+
+            <div class="slideshow-container">
+
+                <div class="slides fade">
+                    <img src="images/Placeholders/1200x600-temp-pic.png">
+                    <div class="title-caption">Meet Pip</div>
+                    <div class="caption">Use your wits to prove that you don’t need wings to reach great heights </div>
+                </div>
+
+                <div class="slides fade">
+                    <img src="images/Placeholders/1200x600-temp-pic.png">
+                    <div class="title-caption">Help Lost Eggs</div>
+                    <div class="caption">Solve puzzles to help lost eggs find their way back home</div>
+                </div>
+
+                <div class="slides fade">
+                    <img src="images/Placeholders/1200x600-temp-pic.png">
+                    <div class="title-caption">Explore The Tree</div>
+                    <div class="caption">Discover new environments and meet friends along the way</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot dot-active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+
+        <!--
         <div class="parent-box">
             <div class="child-box">
 
@@ -94,6 +137,7 @@
                 </p>
             </div>
         </div>
+        -->
     </div>
 
     <div class="tan-section">
