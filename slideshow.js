@@ -1,9 +1,8 @@
 let slideIndex = 1;
-showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function addSlide(n) {
+    showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
@@ -28,6 +27,7 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" dot-active", "");
   }
 
+  //sets current image and corresponding dot to active
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " dot-active";
 }
